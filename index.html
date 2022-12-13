@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magiczny Kasztan</title>
+</head>
+<body>
+    <div hidden id="notesjson">
+{
+  "notes": [
+  {
+        "subject":"Tutorial",
+        "note_title":"Tutorial",
+        "note_content":"Tutorial to api"
+        }
+  ]
+}
+    </div>
+    <script>
+        content = document.querySelector("#notesjson").innerHTML;
+        console.log(JSON.parse(content));
+        document.querySelector("body").innerHTML = content;
+    </script>
+</body>
+</html>
